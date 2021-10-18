@@ -11,7 +11,7 @@
 </head>
 <body>
     <section id="banner">
-    <p>Matrix Calculator<hr></p>
+    <p style="color: red;">Matrix Calculator</p>
     <div id="upper">
         <div id="matrix1" class="parent">
             <h1 class="title">Matrix A</h1>
@@ -24,18 +24,17 @@
             <input type="number" class="m1r3" value="0"/>
             <input type="number" class="m1r3" value="0"/>
             <input type="number" class="m1r3" value="0"/>
-            <div class="functions">
 
-                
+     <div class="functions">             
             <input type="button" class="function" value="Determinant(A)" onclick="mc.calDeterminantA()"/>
             <input type="button" class="function" value="Transpose(A)" onclick="mc.transposeMatrixA()"/>
             <input type="button" class="function" value="Rank(A)" onclick="mc.calRankA()"/>                                
             </div>
         </div>
         <div id="operations">
-            <button id="operation" type="button" class="btn btn-outline-primary" onclick="mc.addMatrix()">A + B</button>
-            <button id="operation" type="button" onclick="mc.subtractMatrix()" class="btn btn-outline-secondary">A - B</button>
-            <button id="operation" type="button" class="btn btn-outline-success" onclick="mc.multiplyMatrix()">A X B</button>
+            <button id="operation" type="button" class="btn btn-outline-primary" onclick="mc.addMatrix()">A+B</button>
+            <button id="operation" type="button" onclick="mc.subtractMatrix()" class="btn btn-outline-secondary">A-B</button>
+            <button id="operation" type="button" class="btn btn-outline-success" onclick="mc.multiplyMatrix()">AXB</button>
             <button id="operation" type="button" class="btn btn-outline-danger" onclick="mc.clear()">Clear</button>
         </div>
 
@@ -59,7 +58,7 @@
     </div>
     <br>
     <div id="lower">    
-        <textarea wrap="soft" id="console" cols="20" rows="10" disabled>Result:</textarea>
+        <textarea wrap="soft" id="console" cols="10" rows="8" disabled>Result:</textarea>
     </div>
    
 </section>
